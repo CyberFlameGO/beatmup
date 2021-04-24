@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beatmup.Metric &#8212; Beatmup Python docs</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="beatmup.Multitask" href="beatmup.Multitask.html" />
+    <link rel="prev" title="beatmup.InternalBitmap" href="beatmup.InternalBitmap.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.Multitask.html" title="beatmup.Multitask"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.InternalBitmap.html" title="beatmup.InternalBitmap"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.Metric</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="beatmup-metric">
+<h1>beatmup.Metric<a class="headerlink" href="#beatmup-metric" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="beatmup.Metric">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">beatmup.</span></code><code class="sig-name descname"><span class="pre">Metric</span></code><a class="headerlink" href="#beatmup.Metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Measures the difference between two bitmaps</p>
+<dl class="py method">
+<dt id="beatmup.Metric.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#beatmup.Metric" title="beatmup.Metric"><span class="pre">beatmup.Metric</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#beatmup.Metric.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#beatmup.Metric.__init__" title="beatmup.Metric.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.Metric.get_result" title="beatmup.Metric.get_result"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_result</span></code></a>(self)</p></td>
+<td><p>Returns the measurement result (after the task is executed</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.Metric.psnr" title="beatmup.Metric.psnr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">psnr</span></code></a>(bitmap1, bitmap2)</p></td>
+<td><p>Computes peak signal-to-noise ratio in dB for two given images</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.Metric.set_bitmaps" title="beatmup.Metric.set_bitmaps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_bitmaps</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.Metric.set_norm" title="beatmup.Metric.set_norm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_norm</span></code></a>(self, arg0)</p></td>
+<td><p>Specifies the norm to use in the measurement</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">L1</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">L2</span></code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="beatmup.InternalBitmap.html"
+                        title="previous chapter">beatmup.InternalBitmap</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="beatmup.Multitask.html"
+                        title="next chapter">beatmup.Multitask</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.Multitask.html" title="beatmup.Multitask"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.InternalBitmap.html" title="beatmup.InternalBitmap"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.Metric</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, lnstadrum.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
+    </div>
+  </body>
+</html>

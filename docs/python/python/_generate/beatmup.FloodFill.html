@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beatmup.FloodFill &#8212; Beatmup Python docs</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="beatmup.ImageShader" href="beatmup.ImageShader.html" />
+    <link rel="prev" title="beatmup.CustomPipeline" href="beatmup.CustomPipeline.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.ImageShader.html" title="beatmup.ImageShader"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.CustomPipeline.html" title="beatmup.CustomPipeline"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.FloodFill</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="beatmup-floodfill">
+<h1>beatmup.FloodFill<a class="headerlink" href="#beatmup-floodfill" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="beatmup.FloodFill">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">beatmup.</span></code><code class="sig-name descname"><span class="pre">FloodFill</span></code><a class="headerlink" href="#beatmup.FloodFill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Discovers areas of similar colors up to a tolerance threshold around given positions (seeds) in the input image.
+These areas are filled with white color in another image (output). If the output bitmap is a binary mask,
+corresponding pixels are set to <cite>1</cite>. The rest of the output image remains unchanged.
+Optionally, computes contours around the discovered areas and stores the contour positions.
+Also optionally, applies post-processing by dilating or eroding the discovered regions in the output image.</p>
+<dl class="py method">
+<dt id="beatmup.FloodFill.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#beatmup.FloodFill" title="beatmup.FloodFill"><span class="pre">beatmup.FloodFill</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#beatmup.FloodFill.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#beatmup.FloodFill.__init__" title="beatmup.FloodFill.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.get_bounds" title="beatmup.FloodFill.get_bounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_bounds</span></code></a>(self, arg0)</p></td>
+<td><p>Returns bounding box of the computed mask</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.get_contour" title="beatmup.FloodFill.get_contour"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_contour</span></code></a>(self, index)</p></td>
+<td><p>Returns a contour by index if compute_contours was set to True, throws an exception otherwise</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.get_contour_count" title="beatmup.FloodFill.get_contour_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_contour_count</span></code></a>(self)</p></td>
+<td><p>Returns number of discovered contours</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.set_border_postprocessing" title="beatmup.FloodFill.set_border_postprocessing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_border_postprocessing</span></code></a>(self, operation, …)</p></td>
+<td><p>Specifies a morphological operation to apply to the mask border.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.set_compute_contours" title="beatmup.FloodFill.set_compute_contours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_compute_contours</span></code></a>(self, compute)</p></td>
+<td><p>Enables or disables contours computation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.set_mask_pos" title="beatmup.FloodFill.set_mask_pos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_mask_pos</span></code></a>(self, pos)</p></td>
+<td><p>Specifies left-top corner position of the mask inside the input bitmap</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.set_seeds" title="beatmup.FloodFill.set_seeds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_seeds</span></code></a>(self, seeds)</p></td>
+<td><p>Specifies a set of seeds (starting points)</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DILATE</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ERODE</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NONE</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.input" title="beatmup.FloodFill.input"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input</span></code></a></p></td>
+<td><p>Input bitmap</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.output" title="beatmup.FloodFill.output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output</span></code></a></p></td>
+<td><p>Output bitmap</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.FloodFill.tolerance" title="beatmup.FloodFill.tolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tolerance</span></code></a></p></td>
+<td><p>Intensity tolerance</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="beatmup.CustomPipeline.html"
+                        title="previous chapter">beatmup.CustomPipeline</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="beatmup.ImageShader.html"
+                        title="next chapter">beatmup.ImageShader</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.ImageShader.html" title="beatmup.ImageShader"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.CustomPipeline.html" title="beatmup.CustomPipeline"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.FloodFill</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, lnstadrum.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
+    </div>
+  </body>
+</html>

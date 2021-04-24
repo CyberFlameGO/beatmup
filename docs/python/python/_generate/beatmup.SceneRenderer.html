@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beatmup.SceneRenderer &#8212; Beatmup Python docs</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="beatmup.ShaderApplicator" href="beatmup.ShaderApplicator.html" />
+    <link rel="prev" title="beatmup.Scene" href="beatmup.Scene.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.ShaderApplicator.html" title="beatmup.ShaderApplicator"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.Scene.html" title="beatmup.Scene"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.SceneRenderer</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="beatmup-scenerenderer">
+<h1>beatmup.SceneRenderer<a class="headerlink" href="#beatmup-scenerenderer" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="beatmup.SceneRenderer">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">beatmup.</span></code><code class="sig-name descname"><span class="pre">SceneRenderer</span></code><a class="headerlink" href="#beatmup.SceneRenderer" title="Permalink to this definition">¶</a></dt>
+<dd><p>AbstractTask rendering a Scene.
+The rendering may be done to a given bitmap or on screen, if the platform supports on-screen rendering.</p>
+<dl class="py method">
+<dt id="beatmup.SceneRenderer.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#beatmup.SceneRenderer" title="beatmup.SceneRenderer"><span class="pre">beatmup.SceneRenderer</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#beatmup.SceneRenderer.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#beatmup.SceneRenderer.__init__" title="beatmup.SceneRenderer.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.pick_layer" title="beatmup.SceneRenderer.pick_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pick_layer</span></code></a>(self, x, y, inPixels)</p></td>
+<td><p>Searches for a layer at a given position.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.reset_output" title="beatmup.SceneRenderer.reset_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset_output</span></code></a>(self)</p></td>
+<td><p>Removes a bitmap from the renderer output, if any, and switches to on-screen rendering.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FIT_HEIGHT</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FIT_WIDTH</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FIT_WIDTH_TO_TOP</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">STRETCH</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.background_image" title="beatmup.SceneRenderer.background_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">background_image</span></code></a></p></td>
+<td><p>Image to pave the background.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.output" title="beatmup.SceneRenderer.output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output</span></code></a></p></td>
+<td><p>Output bitmap</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.output_mapping" title="beatmup.SceneRenderer.output_mapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_mapping</span></code></a></p></td>
+<td><p>Specifies how the scene coordinates [0,1]² are mapped to the output (screen or bitmap) pixel coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.output_pixels_fetching" title="beatmup.SceneRenderer.output_pixels_fetching"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_pixels_fetching</span></code></a></p></td>
+<td><p>If set to <cite>True</cite>, the output image data is pulled from GPU to CPU memory every time the rendering is done.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.output_reference_width" title="beatmup.SceneRenderer.output_reference_width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_reference_width</span></code></a></p></td>
+<td><p>Value overriding output width for elements that have their size in pixels, in order to render a resolution-independent picture</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.SceneRenderer.scene" title="beatmup.SceneRenderer.scene"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scene</span></code></a></p></td>
+<td><p>Scene</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="beatmup.Scene.html"
+                        title="previous chapter">beatmup.Scene</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="beatmup.ShaderApplicator.html"
+                        title="next chapter">beatmup.ShaderApplicator</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.ShaderApplicator.html" title="beatmup.ShaderApplicator"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.Scene.html" title="beatmup.Scene"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.SceneRenderer</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, lnstadrum.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
+    </div>
+  </body>
+</html>

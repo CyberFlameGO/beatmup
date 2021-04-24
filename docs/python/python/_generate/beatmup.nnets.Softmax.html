@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beatmup.nnets.Softmax &#8212; Beatmup Python docs</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="beatmup.nnets.Pooling2D" href="beatmup.nnets.Pooling2D.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.nnets.Pooling2D.html" title="beatmup.nnets.Pooling2D"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.nnets.Softmax</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="beatmup-nnets-softmax">
+<h1>beatmup.nnets.Softmax<a class="headerlink" href="#beatmup-nnets-softmax" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="beatmup.nnets.Softmax">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">beatmup.nnets.</span></code><code class="sig-name descname"><span class="pre">Softmax</span></code><a class="headerlink" href="#beatmup.nnets.Softmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Softmax layer.
+It does not have output, but acts as a sink. The resulting probabilities are returned by getProbabilities().
+This operation is executed on CPU.</p>
+<dl class="py method">
+<dt id="beatmup.nnets.Softmax.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#beatmup.nnets.Softmax" title="beatmup.nnets.Softmax"><span class="pre">beatmup.nnets.Softmax</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#beatmup.nnets.Softmax.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a softmax layer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – operation name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#beatmup.nnets.Softmax.__init__" title="beatmup.nnets.Softmax.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, name)</p></td>
+<td><p>Creates a softmax layer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.nnets.Softmax.get_probabilities" title="beatmup.nnets.Softmax.get_probabilities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_probabilities</span></code></a>(self)</p></td>
+<td><p>Returns the list of probabilities</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_count</span></code></p></td>
+<td><p>Number of operation inputs</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>Operation name</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_count</span></code></p></td>
+<td><p>Number of operation outputs</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="beatmup.nnets.Pooling2D.html"
+                        title="previous chapter">beatmup.nnets.Pooling2D</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.nnets.Pooling2D.html" title="beatmup.nnets.Pooling2D"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.nnets.Softmax</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, lnstadrum.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
+    </div>
+  </body>
+</html>

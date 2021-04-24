@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beatmup.ImageShader &#8212; Beatmup Python docs</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="beatmup.IntegerContour2D" href="beatmup.IntegerContour2D.html" />
+    <link rel="prev" title="beatmup.FloodFill" href="beatmup.FloodFill.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.IntegerContour2D.html" title="beatmup.IntegerContour2D"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.FloodFill.html" title="beatmup.FloodFill"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.ImageShader</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="beatmup-imageshader">
+<h1>beatmup.ImageShader<a class="headerlink" href="#beatmup-imageshader" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="beatmup.ImageShader">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">beatmup.</span></code><code class="sig-name descname"><span class="pre">ImageShader</span></code><a class="headerlink" href="#beatmup.ImageShader" title="Permalink to this definition">¶</a></dt>
+<dd><p>A GLSL program to process images</p>
+<dl class="py method">
+<dt id="beatmup.ImageShader.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#beatmup.ImageShader" title="beatmup.ImageShader"><span class="pre">beatmup.ImageShader</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="beatmup.Context.html#beatmup.Context" title="beatmup.Context"><span class="pre">beatmup.Context</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#beatmup.ImageShader.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#beatmup.ImageShader.__init__" title="beatmup.ImageShader.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, context)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_float</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_float_array</span></code>(self, name, values)</p></td>
+<td><p>Sets a float array variable value</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_float_matrix2</span></code>(self, name, matrix)</p></td>
+<td><p>Sets a float 2*2 matrix variable value</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_float_matrix3</span></code>(self, name, matrix)</p></td>
+<td><p>Sets a float 3*3 matrix variable value</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_float_matrix4</span></code>(self, name, matrix)</p></td>
+<td><p>Sets a float 4*4 matrix variable value</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_integer</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../python.html#beatmup.ImageShader.set_source_code" title="beatmup.ImageShader.set_source_code"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_source_code</span></code></a>(self, glsl)</p></td>
+<td><p>Passes new source code to the fragment shader.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CODE_HEADER</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_IMAGE_DECL_TYPE</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_IMAGE_ID</span></code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="beatmup.FloodFill.html"
+                        title="previous chapter">beatmup.FloodFill</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="beatmup.IntegerContour2D.html"
+                        title="next chapter">beatmup.IntegerContour2D</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="beatmup.IntegerContour2D.html" title="beatmup.IntegerContour2D"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="beatmup.FloodFill.html" title="beatmup.FloodFill"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../python.html">Beatmup Python docs</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">beatmup.ImageShader</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, lnstadrum.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.4.
+    </div>
+  </body>
+</html>

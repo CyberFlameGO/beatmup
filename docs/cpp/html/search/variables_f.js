@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['n_4004',['n',['../classBeatmup_1_1Profiler_1_1Track.html#a01e515899b50a1f66b715ac8429a1ab5',1,'Beatmup::Profiler::Track::n()'],['../wrapper__imag_8cpp.html#ad4bdebba08bf4293f7ce5a94f92fa135',1,'n():&#160;wrapper_imag.cpp']]],
+  ['name_4005',['name',['../classBeatmup_1_1NNets_1_1AbstractOperation.html#a3c03bed9eb982851f6efe32e7af25638',1,'Beatmup::NNets::AbstractOperation::name()'],['../classBeatmup_1_1Scene_1_1Layer.html#aae1451c7eabb4a78afa63d786b2ba68f',1,'Beatmup::Scene::Layer::name()'],['../wrapper__core_8cpp.html#a14fea867f5c92612fdfc9288bf83144c',1,'name():&#160;wrapper_core.cpp'],['../wrapper__imag_8cpp.html#a14fea867f5c92612fdfc9288bf83144c',1,'name():&#160;wrapper_imag.cpp'],['../wrapper__nnets_8cpp.html#a0b659de2693d27871967b5d7e839d1e0',1,'name():&#160;wrapper_nnets.cpp']]],
+  ['nbsizex_4006',['nbSizeX',['../classBeatmup_1_1NNets_1_1SpatialFilteringMixin.html#ae717e43e269b1069a1eed0bfa0bab4f8',1,'Beatmup::NNets::SpatialFilteringMixin']]],
+  ['nbsizey_4007',['nbSizeY',['../classBeatmup_1_1NNets_1_1SpatialFilteringMixin.html#a931cd682ded840cf87e454e261432c10',1,'Beatmup::NNets::SpatialFilteringMixin']]],
+  ['newbie_4008',['newbie',['../wrapper__core_8cpp.html#a91097eeec480cfa08885f33177705880',1,'newbie():&#160;wrapper_core.cpp'],['../wrapper__imag_8cpp.html#a3bbb96cedbda8a93986fff936558a760',1,'newbie():&#160;wrapper_imag.cpp']]],
+  ['norm_4009',['norm',['../classBeatmup_1_1Metric.html#a52ac8c2f16d9079e8352377c0cf2f54b',1,'Beatmup::Metric']]],
+  ['num_5fpixel_5fformats_4010',['NUM_PIXEL_FORMATS',['../classBeatmup_1_1AbstractBitmap.html#a69d9fa9c16cbf4a1425b2ed691bf7809',1,'Beatmup::AbstractBitmap']]],
+  ['number_5fof_5fbits_4011',['NUMBER_OF_BITS',['../classBeatmup_1_1MaskScanner.html#a09aff044c0753391852a9d5a2af8f694',1,'Beatmup::MaskScanner']]],
+  ['number_5fof_5fchannels_4012',['NUMBER_OF_CHANNELS',['../classBeatmup_1_1CustomBitmapScanner.html#adb6f5ec16a5ba780b0337967003bf8f0',1,'Beatmup::CustomBitmapScanner::NUMBER_OF_CHANNELS()'],['../classBeatmup_1_1MaskScanner.html#ad68e7576e48a3ab27dd8e7ebff5aa541',1,'Beatmup::MaskScanner::NUMBER_OF_CHANNELS()']]],
+  ['numbuffers_4013',['numBuffers',['../structBeatmup_1_1Audio_1_1AbstractPlayback_1_1Mode.html#a8244015b2ace0663ed7893e504729b2b',1,'Beatmup::Audio::AbstractPlayback::Mode::numBuffers()'],['../classBeatmup_1_1Audio_1_1BasicRealtimePlayback.html#aca9bba0e8e9cde05afd951cbe8c1e3da',1,'Beatmup::Audio::BasicRealtimePlayback::numBuffers()']]],
+  ['numchannels_4014',['numChannels',['../classBeatmup_1_1Audio_1_1Signal_1_1Source.html#a4961b7f604317f4a945afc20dceb05ab',1,'Beatmup::Audio::Signal::Source::numChannels()'],['../classBeatmup_1_1Audio_1_1HarmonicSource.html#ab8c680b8fe4f817f89e901dcab2ec8e4',1,'Beatmup::Audio::HarmonicSource::numChannels()'],['../classBeatmup_1_1Audio_1_1WAV_1_1Header.html#ac7ae92b6013bb8a74f9cd8d633573254',1,'Beatmup::Audio::WAV::Header::numChannels()'],['../structBeatmup_1_1Audio_1_1AbstractPlayback_1_1Mode.html#a89550d9c128540281d079d4841879123',1,'Beatmup::Audio::AbstractPlayback::Mode::numChannels()']]],
+  ['numgroups_4015',['numGroups',['../classBeatmup_1_1NNets_1_1Conv2D.html#a291be2bd4398a01eaf3702ff954ffd20',1,'Beatmup::NNets::Conv2D']]],
+  ['numinputs_4016',['numInputs',['../classBeatmup_1_1GLES31X2UpsamplingNetwork_1_1Layer.html#ae8700d6a5aa39287893e84dc70a626a5',1,'Beatmup::GLES31X2UpsamplingNetwork::Layer']]],
+  ['numoutputchannels_4017',['numOutputChannels',['../classBeatmup_1_1NNets_1_1Conv2D.html#ab5ccde68f01e7c1e111f4cf60105497d',1,'Beatmup::NNets::Conv2D']]],
+  ['numoutputdims_4018',['numOutputDims',['../classBeatmup_1_1NNets_1_1Dense.html#ada456dcef340d497028dd3462b096b02',1,'Beatmup::NNets::Dense']]],
+  ['numoutputs_4019',['numOutputs',['../classBeatmup_1_1GLES31X2UpsamplingNetwork_1_1Layer.html#ada82c6fb8f3f542fa8dc27225c5e9b1c',1,'Beatmup::GLES31X2UpsamplingNetwork::Layer']]],
+  ['numthreadpools_4020',['numThreadPools',['../classContext_1_1Impl.html#a109dd58da55d84459a840e5e65bd29ec',1,'Context::Impl']]]
+];
